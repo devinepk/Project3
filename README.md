@@ -4,3 +4,5 @@ I'm currently working through the error: *SQLSTATE[HY000] [2002] Connection refu
 This error is thrown when I try to register a new user.
 
 Once the issue is resolved I'll continue with the views and rest of the assignment.
+
+^^ Resolved. I needed to restart the server.
