@@ -27,7 +27,7 @@ class HomeController extends Controller
     }
 
 
-    public function store(Request $request, $blog_id)
+    public function store(Request $request)
    {
        $blog = new \App\blog;
        $blog->title = $request->input('title');
