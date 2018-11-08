@@ -28,13 +28,22 @@ class HomeController extends Controller
 
 
     public function store(Request $request)
-   {
+    {
        $blog = new \App\blog;
        $blog->title = $request->input('title');
        $blog->post = $request->input('post');
        $blog->save();
        // $request->session()->flash('status', "Task <strong>{$item->task}</strong> was added!");
        // return redirect("/lists/{$item->todolist_id}");
+    }
+    public function setNameAttribute($value)
+    {
+       if (\Auth::check()) {
+           $this->attributes['username'] = \Auth::id() . '-' . $value;
+       }
+       else {
+           $this->attributes['username'] = $value;
+       }
    }
 
 }
