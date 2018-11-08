@@ -22,19 +22,20 @@
         </div>
     </div>
 </div>
-
-<div class="container mt-5">
-  <div class="card">
-    <div class="card-header text-center">
-      Share Your Thoughts With The World!
-    </div>
-    <div class="card-body">
-      <label for="title">Title: </label>
-      <textarea class="form-control mb-5" id="title" rows="1"></textarea>
-      <label for="article">Why is Monday your favorite day of the week?</label>
-      <textarea class="form-control" id="article" rows="5"></textarea>
-      <a href="#" class="btn btn-primary mt-5 text-center">Go somewhere</a>
+<form method="post" action="/home">
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header text-center">
+        Share Your Thoughts With The World!
+      </div>
+      <div class="card-body">
+        <label for="title">Title: </label>
+        <textarea class="form-control mb-5" id="title" name="title" rows="1"></textarea>
+        <label for="article">Why is Monday your favorite day of the week?</label>
+        <textarea class="form-control" id="post" name="post" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary mt-5">Save</button>
+      </div>
     </div>
   </div>
-</div>
+</form>
 @endsection

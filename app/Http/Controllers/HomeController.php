@@ -25,4 +25,16 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+    public function store(Request $request, $blog_id)
+   {
+       $blog = new \App\blog;
+       $blog->title = $request->input('title');
+       $blog->post = $request->input('post');
+       $blog->save();
+       // $request->session()->flash('status', "Task <strong>{$item->task}</strong> was added!");
+       // return redirect("/lists/{$item->todolist_id}");
+   }
+
 }
