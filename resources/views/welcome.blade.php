@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="/entry">Add a new Entry</a>
+                    <a href="/home">Add a new Entry</a>
                 </div>
 
 

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -23,6 +23,7 @@
     </div>
 </div>
 <form method="post" action="/home">
+  @csrf
   <div class="container mt-5">
     <div class="card">
       <div class="card-header text-center">
