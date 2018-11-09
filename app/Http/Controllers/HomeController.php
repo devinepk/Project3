@@ -36,14 +36,14 @@ class HomeController extends Controller
        // $request->session()->flash('status', "Task <strong>{$item->task}</strong> was added!");
        // return redirect("/lists/{$item->todolist_id}");
     }
-    public function setNameAttribute($value)
-    {
-       if (\Auth::check()) {
-           $this->attributes['username'] = \Auth::id() . '-' . $value;
-       }
-       else {
-           $this->attributes['username'] = $value;
-       }
-   }
+    // public function setNameAttribute($value)
+    // {
+    //    if (\Auth::check()) {
+    //        $this->attributes['username'] = \Auth::id() . '-' . $value;
+    //    }
+    //    else {
+    //        $this->attributes['username'] = $value;
+    //    }
+
 
 }

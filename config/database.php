@@ -1,6 +1,7 @@
 <?php
 
 $url = parse_url(getenv("DATABASE_URL"));
+
 $dbhost = $url['host'];
 $dbuser = $url['user'];
 $dbpass = $url['pass'];
@@ -75,6 +76,21 @@ return [
             'prefix_indexes' => true,
             'schema' => 'public',
             'sslmode' => 'prefer',
+
+
+        // 'pgsql' => [
+        //     'driver' => 'pgsql',
+        //     'host' => $dbhost,
+        //     'port' => $dbport,
+        //     'database' => $dbname,
+        //     'username' => $dbuser,
+        //     'password' => $dbpass,
+        //     'charset' => 'utf8',
+        //     'prefix' => '',
+        //     'prefix_indexes' => true,
+        //     'schema' => 'public',
+        //     'sslmode' => 'prefer',
+
         ],
 
         'sqlsrv' => [
